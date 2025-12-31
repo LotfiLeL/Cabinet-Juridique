@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="signup-page" id="signupPage">
+        <div class="signup-left">
+            <div class="signup-content">
+                <h1>Votre Défense, Notre Mission</h1>
+                <p>Rejoignez notre cabinet juridique et bénéficiez d'une expertise légale de premier ordre. Plus de 15 ans d'expérience à votre service.</p>
+            </div>
+        </div>
+        <div class="signup-right">
+            <div class="signup-form-container">
+                <div class="form-header">
+                    <h2>Créer un compte</h2>
+                    <p>Remplissez le formulaire pour commencer</p>
+                </div>
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label>Nom complet</label>
+                        <input type="text" name="name" required placeholder="Entrez votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" required placeholder="votre@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Téléphone</label>
+                        <input type="tel" name="phone" required placeholder="+213 555 123 456">
+                    </div>
+                    <div class="form-group">
+                        <label>Type de consultation</label>
+                        <select name="consultationType" required>
+                            <option value="">Sélectionnez...</option>
+                            <option value="civil">Droit Civil</option>
+                            <option value="affaires">Droit des Affaires</option>
+                            <option value="penal">Droit Pénal</option>
+                            <option value="famille">Droit de la Famille</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message (optionnel)</label>
+                        <textarea name="message" placeholder="Décrivez brièvement votre besoin..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">S'inscrire</button>
+                </form>
+                <div class="login-link">
+                    Déjà inscrit ? <a href="#" id="loginLink">Se connecter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Site principal (caché initialement) -->
+    <div class="main-website" id="mainWebsite">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Cabinet Juridique</div>
+                <ul class="nav-menu">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="logout-btn" onclick="logout()">Déconnexion</button>
+            </div>
+        </nav>
+
+        <section class="hero" id="accueil">
+            <div class="hero-content">
+                <h1>Excellence Juridique à Votre Service</h1>
+                <p>Nous défendons vos droits avec passion et professionnalisme. Notre équipe d'experts est là pour vous accompagner dans toutes vos démarches juridiques.</p>
+                <button class="cta-btn" onclick="scrollToContact()">Prendre Rendez-vous</button>
+            </div>
+        </section>
+
+        <section class="section" id="services">
+            <h2>Nos Domaines d'Expertise</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>⚖️ Droit Civil</h3>
+                    <p>Contentieux civil, droit des contrats, responsabilité civile et conseil juridique personnalisé.</p>
+                </div>
+                <div class="service-card">
+                    <h3>💼 Droit des Affaires</h3>
+                    <p>Accompagnement des entreprises, fusion-acquisition, droit commercial et droit des sociétés.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🛡️ Droit Pénal</h3>
+                    <p>Défense pénale, assistance en garde à vue, représentation devant les tribunaux correctionnels.</p>
+                </div>
+                <div class="service-card">
+                    <h3>👨‍👩‍👧 Droit de la Famille</h3>
+                    <p>Divorce, garde d'enfants, pension alimentaire et succession.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🏢 Droit Immobilier</h3>
+                    <p>Transactions immobilières, baux commerciaux, copropriété et urbanisme.</p>
+                </div>
+                <div class="service-card">
+                    <h3>⚡ Droit du Travail</h3>
+                    <p>Licenciement, harcèlement, prud'hommes et conseil aux employeurs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="contact-section">
+                <h2>Contactez-Nous</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>📞 Téléphone</h3>
+                        <p>+213 555 123 456</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>📧 Email</h3>
+                        <p>contact@cabinetjuridique.dz</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>📍 Adresse</h3>
+                        <p>123 Rue de la Justice<br>Oran, Algérie</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>⏰ Horaires</h3>
+                        <p>Lun-Ven: 9h-18h<br>Sam: 9h-13h</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Cabinet Juridique. Tous droits réservés.</p>
+        </footer>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>
